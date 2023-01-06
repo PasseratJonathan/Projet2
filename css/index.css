@@ -5,6 +5,8 @@
 
 body {
     font-family: raleway, sans-serif;
+    width: 1440px;
+    margin: auto;
 }
 
 body p {
@@ -57,15 +59,20 @@ h1 {
 
 /* Recherche */
 
+.recherche {
+    display: flex;
+    position: relative;
+    width: 500px;
+}
+
 .barre-recherche {
     display: flex;
-    width: 430px;
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 46px;
 }
 
-.fa-icon, .marseille, .rechercher {
+.fa-icon, .marseille, .rechercher, .loupe {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,21 +90,33 @@ h1 {
     font-size: 18px;
     font-weight: bold;
     padding-left: 20px;
-    width: 230px;
+    width: 280px;
     border: 1px solid #D9D9D9;
 }
 
-.rechercher {
+.loupe, .rechercher {
     background-color: #0065FC;
     color: white;
+    border-radius: 0px 15px 15px 0;
+}
+
+.loupe {
+    width: 50px;
+    display: none;
+}
+
+.rechercher {
+    position: absolute;  
+    top: 20px;
+    bottom: 20px;
+    right: 85px;
     font-size: 18px;
     font-weight: bold;
-    width: 132px;
-    border-radius: 0 15px 15px 0;
+    padding: 15px;
 }
 
 
-/**/
+/* Filtres */
 
 .filtre {
     margin-left: 7px;
@@ -113,7 +132,7 @@ h1 {
 .filtre ul {
     display: flex;
     list-style-type: none;
-    gap: 30px;
+    gap: 40px;
 }
 
 
@@ -136,7 +155,7 @@ h1 {
     margin-right: 10px;
 }
 
-.fa-person, .fa-money-bill-wave, .fa-heart, .fa-dog, .fa-info {
+.fa-person, .fa-money-bill-wave, .fa-heart, .fa-dog, .fa-info, .fa-star {
     color: #0065FC;
 }
 
@@ -155,4 +174,93 @@ h1 {
     margin-right: 20px;
     width: 24px;
     height: 24px;
+}
+
+/* Section */
+
+section {
+    display: flex;
+    margin: 50px;
+    gap: 40px;
+}
+
+section h2 {
+    font-size: 22px;
+    margin-top: 42px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 16px;
+}
+
+
+.grid-hebergement p {
+    font-size: 14px;
+}
+
+.hebergement {
+    width: 880px;
+    height: 626px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+
+.grid-hebergement {
+    display: grid;
+    grid-template-columns: 246px 246px 246px;
+    grid-template-rows: 199px 199px 199px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.element1,
+.element2,
+.element3,
+.element4,
+.element5,
+.element6 {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.element1 img,
+.element2 img,
+.element3 img,
+.element4 img,
+.element5 img,
+.element6 img {
+    width: 95%;
+    height: 114px;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+}
+
+.description-grid {
+    padding-left: 16px;
+}
+
+.greystar {
+    color: #D9D9D9;
+}
+
+.afficher-plus {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Aside */
+
+aside {
+    width: 420px;
+    height: 625px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+aside h2 {
+    margin-top: 41px;
+    margin-left: 37px;
 }
