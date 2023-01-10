@@ -21,6 +21,11 @@ header {
 
 nav img {
     height: 20px;
+    padding-top: 44px;
+}
+
+.haut-de-page {
+    margin-left: 55px;
 }
 
 
@@ -36,7 +41,10 @@ nav ul {
     display: flex;
     list-style-type: none;
     gap: 67px;
+    margin-top: 48px;
+    padding-right: 77px;
 }
+
 
 nav a {
     color: black;
@@ -47,6 +55,7 @@ nav a {
 nav a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
+    padding-top: 46px;
 }
 
 
@@ -66,10 +75,10 @@ h1 {
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 46px;
-    width: 40%;
+    width: 440px;
 }
 
-.fa-icon, .marseille, button, .loupe i {
+.fa-icon, .marseille, .loupe {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +96,7 @@ h1 {
     font-size: 18px;
     font-weight: bold;
     padding-left: 20px;
-    width: 100%;
+    width: 230px;
     border: 1px solid #D9D9D9;
 }
 
@@ -95,11 +104,19 @@ button {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 15px 15px 0;
-    width: 30%;
+    cursor: pointer;
 }
+
+.rechercher {
+    font-size: 18px;
+    font-weight: bold;
+    width: 140px;
+}
+
 
 .loupe i {
     width: 50px;
+    font-size: 17px;
     display: none;
 }
 
@@ -207,10 +224,15 @@ section p {
     justify-content: center;
 }
 
+.grid-hebergement a {
+    text-decoration: none;
+    color: black;
+}
+
 .element {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 1px black;
+    box-shadow: 0 1px 5px rgb(141, 141, 141);
 }
 
 .element img {
@@ -270,13 +292,18 @@ aside h3 {
     padding-right: 50px;
 }
 
-.populaire1 {
-    background-color: aliceblue;
+.grid-populaire a {
+    text-decoration: none;
+    color: black;
+}
+
+.populaire {
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     display: flex;
 }
 
-.populaire1 img {
+.populaire img {
     width: 40%;
     height: 134px;
     border-radius: 20px 0 0 20px;
@@ -317,8 +344,9 @@ aside h3 {
 .activites-marseille {
     display: flex;
     flex-direction: column;
-    background-color: #b6b6b6;
+    background-color: #ffffff;
     border-radius: 20px;
+    box-shadow: 0px 1px 10px rgb(170, 170, 170);
 }
 
 .activites-marseille img {
@@ -331,6 +359,7 @@ aside h3 {
 .activites-marseille h3 {
     padding-left: 19px;
     font-size: 16px;
+    padding-top: 20px;
 }
 
 /* Footer */
