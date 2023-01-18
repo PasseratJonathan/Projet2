@@ -142,13 +142,14 @@ button {
     display: flex;
     list-style-type: none;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 
 .filtre li {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 46px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     font-size: 17px;
@@ -363,11 +364,13 @@ aside h3 {
 .activites-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 445px;
+    grid-template-rows: 1fr;
     gap: 43px;
 }
 
 .activites-grid a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: black;
 }
@@ -382,21 +385,23 @@ aside h3 {
 
 .activites-marseille img {
     width: 100%;
-    height: 88%;
+    height: 388px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 .activites-marseille h3 {
-    margin-left: 19px;
+    display: block;
+    padding: 10px 19px;
     font-size: 16px;
 }
 
 .description-activites {
-    height: 56px;
     display: flex;
     align-items: center;
+    flex: auto;
 }
+
 
 /* Footer */
 
@@ -421,7 +426,7 @@ footer h3 {
 footer li {
     list-style-type: none;
     font-size: 16px;
-    padding: 0;   
+    margin-bottom: 10px;
 }
 
 
@@ -431,7 +436,7 @@ footer li {
     body {
         padding: 0 70px 0 70px;
         max-width: 990px;
-        width: 100%;
+        width: calc(100% - 140px);
     }
 
     .haut-de-page {
@@ -467,7 +472,8 @@ footer li {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
-        height: 278px;justify-content: center;
+        height: 278px;
+        justify-content: center;
     }
 
     .grid-populaire h3 {
@@ -486,18 +492,14 @@ footer li {
 
     footer {
         margin: 70px 0 0 0;
-        padding: 0;
+        padding: 0 0 50px 0;
         width: 100%;
     }
 
-
-    .activites-marseille {
-        height: 267px;
+    .element-footer {
+        margin-right: 20%;
     }
 
-    .activites-grid {
-        height: 267px;
-    }
 
     .section2 {
         width: 100%;
@@ -505,11 +507,157 @@ footer li {
     }
 
 
+    .activites-marseille img {
+        height: 221px;
+    }
+
 }
 
 
 @media screen and (max-width: 767px) {
 
+    body {
+        max-width: 767px;
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    header nav img {
+        margin-top: 21px;
+        margin-bottom: 48px;
+    }
+
+    header nav ul {
+        width: 100%;
+        padding: 0 0 23px 0;
+    }
+
+    header nav li {
+        padding: 0;
+        width: 50%;
+    }
+
+    header nav a {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 21px;
+        border-bottom: #D9D9D9 2px solid;
+    }
+
+    header nav a:hover {
+        padding-bottom: 21px;
+        padding-top: 0;
+        border-top: none;
+        border-bottom: #0065FC 2px solid;
+    }
+
+    .haut-de-page {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .recherche {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .barre-recherche {
+        width: 90%;
+        margin: 36px 0 34px 0;
+        padding: 0;
+    }
+
+    .rechercher {
+        display: none;
+    }
+
+    .loupe i {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .section-hebergement {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .grid-populaire {
+        grid-template-columns: 1fr;
+        background-color: #D9D9D9;
+        margin: 0 20px 47px 20px;
+        padding: 0;
+    }
+
+    .entete-populaire {
+        border-radius: 80px;
+    }
+
+    .populaire-description h3 {
+        font-size: 16px;
+    }
+
+    .hebergement {
+        height: 100%;
+        background-color: #F2F2F2;
+    }
+    
+
+    .grid-hebergement {
+        grid-template-columns: 1fr;
+        margin-bottom: 0 20px 70px 20px;
+        padding: 0;
+    }
+
+    aside {
+        height: 100%;
+        margin-top: 17px;
+    }
+
+    #bas-hebergement {
+        display: none;
+    }
+
+    .activites {
+        margin-top: 105px;
+    }
+
+    .activites-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activites-grid a {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .element-footer {
+        flex-direction: column;
+    }
+
+    .activites h2 {
+        margin-left: 20px;
+    }
+
+    .filtre {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .filtre ul {
+        padding: 0;
+    }
+
+    .filtre h2 {
+        display: flex;
+        justify-content: flex-start;
+    }
 
 }
     
