@@ -587,6 +587,7 @@ footer li {
         padding: 0;
     }
 
+
     .grid-populaire {
         grid-template-columns: 1fr;
         background-color: #D9D9D9;
@@ -594,9 +595,6 @@ footer li {
         padding: 0;
     }
 
-    .entete-populaire {
-        border-radius: 80px;
-    }
 
     .populaire-description h3 {
         font-size: 16px;
@@ -610,13 +608,23 @@ footer li {
 
     .grid-hebergement {
         grid-template-columns: 1fr;
-        margin-bottom: 0 20px 70px 20px;
+        margin: 0 20px 70px 20px;
         padding: 0;
     }
 
     aside {
         height: 100%;
-        margin-top: 17px;
+        margin-top: 40px;
+        border-radius: 0;
+    }
+
+    .section-hebergement {
+        gap: 0;
+    }
+
+    .section-hebergement h2 {
+        margin-top: 30px;
+        margin-left: 20px;
     }
 
     #bas-hebergement {
@@ -624,7 +632,7 @@ footer li {
     }
 
     .activites {
-        margin-top: 105px;
+        margin-top: 65px;
     }
 
     .activites-grid {
@@ -636,8 +644,13 @@ footer li {
         margin-right: 20px;
     }
 
+    .activites-grid a img {
+        height: 134px;
+    }
+
     .element-footer {
         flex-direction: column;
+        margin-left: 30px;
     }
 
     .activites h2 {
@@ -645,18 +658,24 @@ footer li {
     }
 
     .filtre {
+        display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         margin: 0;
-    }
-
-    .filtre ul {
-        padding: 0;
+        align-items: flex-start;
     }
 
     .filtre h2 {
-        display: flex;
-        justify-content: flex-start;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    .filtre li {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .filtre ul li {
+        width: 116px;
     }
 
 }
