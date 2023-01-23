@@ -452,6 +452,10 @@ footer li {
         padding-right: 0;
     }
     
+    .filtre h2 {
+        margin-right: 20px;
+    }
+
     .filtre ul {
         gap: 10px;
     }
@@ -661,7 +665,6 @@ footer li {
         display: flex;
         flex-direction: column;
         margin: 0;
-        align-items: flex-start;
     }
 
     .filtre h2 {
@@ -669,12 +672,13 @@ footer li {
         margin: 0 0 15px 0;
     }
 
+    .filtre ul {
+        justify-content: center;
+    }
+
     .filtre li {
         font-size: 11px;
         font-weight: bold;
-    }
-
-    .filtre ul li {
         width: 116px;
     }
 
