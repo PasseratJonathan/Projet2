@@ -241,7 +241,7 @@ section p {
 }
 
 .element img {
-    width: 96%;
+    width: calc(100% - 10px);
     height: 114px;
     border-radius: 20px 20px 0 0;
     padding: 5px;
@@ -250,6 +250,7 @@ section p {
 
 .description-grid {
     padding-left: 16px;
+    white-space: nowrap;
 }
 
 
@@ -392,7 +393,7 @@ aside h3 {
 
 .activites-marseille h3 {
     display: block;
-    padding: 10px 19px;
+    padding: 17px 19px;
     font-size: 16px;
 }
 
@@ -515,6 +516,10 @@ footer li {
         height: 221px;
     }
 
+    .activites-marseille h3 {
+        padding: 10px 19px;
+    }
+
 }
 
 
@@ -571,9 +576,13 @@ footer li {
     }
 
     .barre-recherche {
-        width: 90%;
+        width: 100%;
         margin: 36px 0 34px 0;
         padding: 0;
+    }
+
+    .marseille {
+        width: 100%;
     }
 
     .rechercher {
@@ -615,6 +624,10 @@ footer li {
         margin: 0 20px 70px 20px;
         padding: 0;
     }
+    
+    .description-grid {
+        margin-bottom: 5px;
+    }
 
     aside {
         height: 100%;
@@ -643,14 +656,17 @@ footer li {
         grid-template-columns: 1fr;
     }
 
-    .activites-grid a {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
     .activites-grid a img {
         height: 134px;
     }
+
+
+    .activites article {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+      
 
     .element-footer {
         flex-direction: column;
@@ -673,13 +689,15 @@ footer li {
     }
 
     .filtre ul {
-        justify-content: center;
+        justify-content: space-between;
+        row-gap: 10px;
+        width: 100%;
     }
 
     .filtre li {
         font-size: 11px;
         font-weight: bold;
-        width: 116px;
+        width: calc(50% - 50px);
     }
 
 }
