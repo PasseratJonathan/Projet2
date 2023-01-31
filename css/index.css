@@ -8,7 +8,7 @@ body {
     max-width: 1400px;
     width: 100%;
     margin: auto;
-    background-color: #F2F2F2;
+    background-color: #ffffff;
 }
 
 body p {
@@ -92,7 +92,7 @@ h1 {
 
 .fa-icon {
     width: 50px;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
 
@@ -215,7 +215,7 @@ section p {
 .hebergement {
     width: 70%;
     height: 626px;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
     border-radius: 20px;
 }
 
@@ -275,7 +275,7 @@ section p {
 aside {
     width: 33%;
     height: 625px;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
     border-radius: 20px;
 }
 
@@ -407,7 +407,7 @@ aside h3 {
 /* Footer */
 
 footer {
-    background-color: #D9D9D9;
+    background-color: #F2F2F2;
     margin: 70px 50px 0 50px;
     padding-bottom: 58px;
 }
@@ -431,7 +431,7 @@ footer li {
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     
 
     body {
@@ -523,7 +523,7 @@ footer li {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     body {
         max-width: 767px;
